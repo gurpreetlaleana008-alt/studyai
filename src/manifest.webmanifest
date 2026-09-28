@@ -1,0 +1,19 @@
+{
+  "name": "StudyAI — Your AI Study Assistant",
+  "short_name": "StudyAI",
+  "description": "Learn smarter with AI Notes, AI Tutor, Quizzes, PDF tools and more.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#4f46e5",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

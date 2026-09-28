@@ -1,0 +1,227 @@
+* {
+  box-sizing: border-box;
+}
+
+.premium-page {
+  min-height: 100vh;
+  background: #f7f9fc;
+  color: #111827;
+}
+
+.premium-navbar {
+  height: 72px;
+  padding: 0 7%;
+  background: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.premium-logo {
+  font-size: 23px;
+  font-weight: 800;
+}
+
+.premium-home-btn {
+  border: 1px solid #d1d5db;
+  background: #ffffff;
+  color: #374151;
+  padding: 10px 16px;
+  border-radius: 10px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.premium-home-btn:hover {
+  background: #f3f4f6;
+}
+
+.premium-container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 65px 25px 90px;
+}
+
+.premium-heading {
+  text-align: center;
+  max-width: 700px;
+  margin: auto;
+}
+
+.premium-badge {
+  display: inline-block;
+  padding: 8px 14px;
+  border-radius: 999px;
+  background: #eff6ff;
+  color: #2563eb;
+  font-size: 12px;
+  font-weight: 800;
+  margin-bottom: 18px;
+}
+
+.premium-heading h1 {
+  font-size: clamp(38px, 5vw, 58px);
+  letter-spacing: -2px;
+  margin-bottom: 16px;
+}
+
+.premium-heading p {
+  color: #6b7280;
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+.pricing-grid {
+  max-width: 900px;
+  margin: 55px auto 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+  align-items: stretch;
+}
+
+.pricing-card {
+  position: relative;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 24px;
+  padding: 32px;
+  box-shadow: 0 12px 35px rgba(15, 23, 42, 0.05);
+}
+
+.premium-plan {
+  border: 2px solid #2563eb;
+  box-shadow: 0 18px 45px rgba(37, 99, 235, 0.12);
+}
+
+.popular {
+  position: absolute;
+  top: -14px;
+  right: 25px;
+  background: #2563eb;
+  color: #ffffff;
+  padding: 7px 12px;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 800;
+}
+
+.plan-icon {
+  width: 55px;
+  height: 55px;
+  display: grid;
+  place-items: center;
+  background: #eff6ff;
+  border-radius: 16px;
+  font-size: 26px;
+  margin-bottom: 20px;
+}
+
+.pricing-card h2 {
+  font-size: 27px;
+  margin-bottom: 8px;
+}
+
+.plan-description {
+  color: #6b7280;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.price {
+  margin-top: 25px;
+  font-size: 42px;
+  font-weight: 900;
+  letter-spacing: -1px;
+}
+
+.price span {
+  color: #9ca3af;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0;
+}
+
+.features-list {
+  margin-top: 28px;
+  display: grid;
+  gap: 13px;
+}
+
+.features-list div {
+  color: #374151;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.free-plan-btn,
+.premium-plan-btn {
+  width: 100%;
+  margin-top: 30px;
+  padding: 14px;
+  border-radius: 11px;
+  font-size: 15px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.free-plan-btn {
+  border: 1px solid #d1d5db;
+  background: #ffffff;
+  color: #374151;
+}
+
+.free-plan-btn:hover {
+  background: #f3f4f6;
+}
+
+.premium-plan-btn {
+  border: none;
+  background: #2563eb;
+  color: #ffffff;
+}
+
+.premium-plan-btn:hover {
+  background: #1d4ed8;
+}
+
+.premium-note {
+  max-width: 900px;
+  margin: 30px auto 0;
+  padding: 22px 25px;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  text-align: center;
+}
+
+.premium-note strong {
+  font-size: 15px;
+}
+
+.premium-note p {
+  margin-top: 7px;
+  color: #6b7280;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+@media (max-width: 700px) {
+  .premium-navbar {
+    padding: 0 20px;
+  }
+
+  .premium-container {
+    padding: 50px 18px 70px;
+  }
+
+  .pricing-grid {
+    grid-template-columns: 1fr;
+    margin-top: 45px;
+  }
+
+  .pricing-card {
+    padding: 25px;
+  }
+}
