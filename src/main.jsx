@@ -1,3 +1,4 @@
+```jsx
 import { createRoot } from "react-dom/client";
 import "./index.css";
 
@@ -60,3 +61,29 @@ if (path === "/dashboard") {
 createRoot(document.getElementById("root")).render(
   <Page />
 );
+
+// Register Service Worker for PWA
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", () => {
+    const isLocalhost =
+      window.location.hostname === "localhost" ||
+      window.location.hostname === "127.0.0.1";
+
+    const isHttps = window.location.protocol === "https:";
+
+    if (isLocalhost || isHttps) {
+      navigator.serviceWorker
+        .register("/sw.js")
+        .then(() => {
+          console.log("StudyAI Service Worker registered successfully.");
+        })
+        .catch((error) => {
+          console.error(
+            "StudyAI Service Worker registration failed:",
+            error
+          );
+        });
+    }
+  });
+}
+```
